@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>老婆，生日快乐</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.lalala{
+			width:200px;
+			height:300px;
+			position: relative;
+			margin: 200px auto;
+			/*animation: lalala 15s 1 step(12,start);*/
+		}
+		.lalala a{
+			position: absolute;
+			top:0;
+			left: 0;
+			transform-origin:center bottom;
+			transition: all 15s;
+			width: 200px;
+			height:300px;
+			border-radius: 15px;
+			box-shadow: 3px 3px 2px 1px lightskyblue;
+		
+		}
+		.lalala img{
+			width: 200px;
+			height:300px;
+			border-radius: 15px;
+			
+			
+		}
+		.snow{
+			position: absolute;
+				left: 0;
+				top: 0;
+		}
+		/*.lalala a:nth-child(1){
+			animation: one 22s 24.5s 1 linear forwards;
+		}
+		.lalala a:nth-child(2){
+			animation: two 22s 22.5s 1 linear forwards;
+		}
+		.lalala a:nth-child(3){
+			animation: three 22s 20.5s 1  linear forwards;
+		}
+		.lalala a:nth-child(4){
+			animation: four 22s 18.5s 1 linear forwards;
+		}
+		.lalala a:nth-child(5){
+			animation: five 22s 16.5s 1 linear forwards;
+		}
+		.lalala a:nth-child(6){
+			animation: six 22s 14.5s 1  linear forwards;
+		}
+		.lalala a:nth-child(7){
+			animation: seven 22s 12.5s 1  linear forwards;
+		}
+		.lalala a:nth-child(8){
+			animation: eight 22s 10.5s 1  linear forwards;
+		}
+		.lalala a:nth-child(9){
+			animation: nine 22s 8.5s 1  linear forwards;
+		}
+		.lalala a:nth-child(10){
+			animation: ten 22s 6.5s 1  linear forwards;
+		}
+		.lalala a:nth-child(11){
+			animation: tenone 22s 4.5s 1  linear forwards;
+		}
+		.lalala a:nth-child(12){
+			animation: tentwo 22s 2.5s 1  linear forwards;
+		}
+		
+		@keyframes one{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg) ;}
+		}
+		@keyframes two{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+		@keyframes three{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+		@keyframes four{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+		@keyframes five{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+		@keyframes six{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+		@keyframes seven{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+		@keyframes eight{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+		@keyframes nine{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+		@keyframes ten{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+		@keyframes tenone{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+		@keyframes tentwo{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}*/
+		.lalala:hover a:nth-child(12){
+			transform: rotate(360deg) ;
+		} 
+		.lalala:hover a:nth-child(11){
+			transform: rotate(330deg) ;
+		} 
+		.lalala:hover a:nth-child(10){
+			transform: rotate(300deg);
+		}
+		.lalala:hover a:nth-child(9){
+			transform: rotate(270deg);
+		} 
+		.lalala:hover a:nth-child(8){
+			transform: rotate(240deg);
+		}
+		.lalala:hover a:nth-child(7){
+			transform: rotate(210deg);
+		}
+		.lalala:hover a:nth-child(6){
+			transform: rotate(180deg);
+		}
+		.lalala:hover a:nth-child(5){
+			transform: rotate(150deg);
+		}
+		.lalala:hover a:nth-child(4){
+			transform: rotate(120deg);
+		}
+		.lalala:hover a:nth-child(3){
+			transform: rotate(90deg);
+		}
+		.lalala:hover a:nth-child(2){
+			transform: rotate(60deg);
+		}
+		.lalala:hover a:nth-child(1){
+			transform: rotate(30deg);
+		}
+	
+		.gjj {
+				width: 500px;
+				height: 500px;
+				padding: 50px;
+				margin: 0 auto;
+				text-shadow: 0px 0px 4px #CC0066, 0px 0px 8px #FF33FF, 0px 0px 12px #FF99FF;
+				color: white;
+				position: absolute;
+				top: -50px;
+				left: -50px;
+				
+				opacity: 0;
+				transition: all 15s;
+				
+			
+			}
+			h1 {
+				font-size: 80px;
+				text-align: center;
+			}
+			
+			h3 {
+				font-size: 50px;
+				text-align: center;
+			}
+			
+			h5 {
+				font-size: 25px;
+				text-align: center;
+			}
+			
+			h6 {
+				font-size: 15px;
+				text-align: right;
+				vertical-align: bottom;
+				margin-top: 50px;
+			}
+		
+			.lalala:hover .gjj {
+				opacity: 1;
+				transform: scale(1.5);
+			}
+			body{
+				width: 100%;
+				height: 100%;
+				background-image:url(img/bg.jpg) ;
+				background-size:1400px 1200px;
+			}
+			.box{
+				width: 100px;
+				height: 100px;
+				position: relative;
+				left: 200px;
+				bottom: 500px;
+				transform-style: preserve-3d;
+				perspective:1000px ;
+				transition: all 15s; 
+			
+				
+			}
+
+			body:hover .bottom{
+				transform:rotateX(-90deg) translateZ(100px);
+				transition: 5s;
+			}
+			body:hover .top{
+				transform: rotateX(90deg) translateZ(100px);
+				transition: 5s;
+			}
+			body:hover .left{
+				transform: rotateY(90deg) translateZ(100px);
+				transition: 5s;
+			}
+			body:hover .right{
+				transform:  rotateY(-90deg) translateZ(100px);
+				transition: 5s;
+			}
+			body:hover .behand{
+				transform:  translateZ(-100px);
+				transition: 5s;
+			}
+			body:hover .be{
+				transform:translateZ(100px);
+				transition: 5s;
+			}
+			#box {
+				width: 200px;
+				height: 200px;
+				position: relative;
+				top: 200px;
+				margin: 0 auto;
+				transform-style: preserve-3d;
+				transition: all 15s;
+				animation: box 30s infinite ease-in;
+				transform: rotateX(30deg)rotateY(30deg);
+				position: absolute;
+				top: 200px;
+				left: 200px;
+			}
+			
+			.small {
+				transform-style: preserve-3d;
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				left: 50px;
+				top: 50px;
+				transition: all 15s;
+			}
+			
+			.sosmall {
+				transform-style: preserve-3d;
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				left: 75px;
+				top: 75px;
+				transition: all 15s;
+			}
+			
+			.box_s {
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: .6;
+				transition: all 15s;
+			}
+			
+			.box_s2 {
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				opacity: .6;
+				transition: all 15s;
+			}
+			
+			.box_s3 {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				opacity: .6;
+				transition: all 15s;
+			}
+			
+			body:hover #box {
+				transform: rotateX(30deg)rotateY(210deg);
+			}
+			
+			body:hover .small {
+				transform: ;
+			}
+			
+			body:hover .sosmall {
+				transform: scaleX(2) scaleY(2) scaleZ(2);
+			}
+			
+			body:hover .top {
+				transform: rotateX(90deg) translateZ(-250px) scale(0.25, 0.25);
+			}
+			
+			body:hover .bottom {
+				transform: rotateX(90deg) translateZ(250px) scale(0.25, 0.25);
+			}
+			
+			body:hover .left {
+				transform: rotateY(90deg) translateZ(-250px) scale(0.25, 0.25);
+			}
+			
+			body:hover .right {
+				transform: rotateY(90deg) translateZ(250px) scale(0.25, 0.25);
+			}
+			
+			body:hover .before {
+				transform: translateZ(-250px) scale(0.25, 0.25);
+			}
+			
+			body:hover .after {
+				transform: translateZ(250px) scale(0.25, 0.25);
+			}
+			
+			body:hover .top2{
+				transform: rotateX(90deg) translateZ(-150px);
+			}
+			body:hover .bottom2{
+				transform: rotateX(90deg) translateZ(150px);
+			}
+			body:hover .left2{
+				transform: rotateY(90deg) translateZ(-150px);
+			}
+			body:hover .right2{
+				transform: rotateY(90deg) translateZ(150px);
+			}
+			body:hover .before2{
+				transform: translateZ(-150px);
+			}
+			body:hover .after2{
+				transform: translateZ(150px);
+			}
+			/*******************************************大方块*******************************************/
+			
+			.top {
+				background: red;
+				transform: rotateX(90deg) translateZ(-100px);
+			}
+			
+			.bottom {
+				background: orange;
+				transform: rotateX(90deg) translateZ(100px);
+			}
+			
+			.left {
+				background: yellow;
+				transform: rotateY(90deg) translateZ(-100px);
+			}
+			
+			.right {
+				background: green;
+				transform: rotateY(90deg) translateZ(100px);
+			}
+			
+			.before {
+				background: blue;
+				transform: translateZ(-100px);
+			}
+			
+			.after {
+				background: purple;
+				transform: translateZ(100px);
+			}
+			/*******************************************大方块*******************************************/
+			/*******************************************小方块*******************************************/
+			
+			.top2 {
+				background: orange;
+				transform: rotateX(90deg) translateZ(-50px);
+			}
+			
+			.bottom2 {
+				background: red;
+				transform: rotateX(90deg) translateZ(50px);
+			}
+			
+			.left2 {
+				background: green;
+				transform: rotateY(90deg) translateZ(-50px);
+			}
+			
+			.right2 {
+				background: yellow;
+				transform: rotateY(90deg) translateZ(50px);
+			}
+			
+			.before2 {
+				background: purple;
+				transform: translateZ(-50px);
+			}
+			
+			.after2 {
+				background: blue;
+				transform: translateZ(50px);
+			}
+			/*******************************************小方块*******************************************/
+			/*******************************************so小方块*******************************************/
+			
+			.top3 {
+				background: yellow;
+				transform: rotateX(90deg) translateZ(-25px);
+			}
+			
+			.bottom3 {
+				background: green;
+				transform: rotateX(90deg) translateZ(25px);
+			}
+			
+			.left3 {
+				background: blue;
+				transform: rotateY(90deg) translateZ(-25px);
+			}
+			
+			.right3 {
+				background: purple;
+				transform: rotateY(90deg) translateZ(25px);
+			}
+			
+			.before3 {
+				background: red;
+				transform: translateZ(-25px);
+			}
+			
+			.after3 {
+				background: orange;
+				transform: translateZ(25px);
+			}
+			
+			@keyframes box{
+				0%{
+					transform:translateY(0) rotateY(0) rotateX(0) ;
+				}
+				100%{transform:translateY(360px) rotateY(1080deg) rotateX(1080deg);
+				}
+			}
+	</style>
+	</head>
+	
+<body id="debi">
+	
+	<div class="lalala">
+		<a href=""><img src="img/IMG_2450.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2138.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2139.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2140.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2184.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2185.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2188.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2190.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2192.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2262.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2265.JPG" alt=""width="200" height="300"/></a>
+		<a href=""><img src="img/IMG_2257.JPG" alt=""width="200" height="300"/></a>
+			<div class="gjj">
+				<h1>Jyr</h1>
+				<h3>Happy birthday </h3>
+				<h5>亲爱的下次生日的时候，我一定会在你身边~</h5>
+				<h6>你最爱的老公</h6>
+
+			</div>
+		
+	</div>
+	
+	<div id="box">
+			<div class="box_s top">
+				<img src="img/IMG_2257.JPG" alt=""width="200" height="200"/>
+			</div>
+			<div class="box_s bottom">
+				<img src="img/IMG_2450.JPG" alt=""width="200" height="200"/>
+			</div>
+			<div class="box_s left">
+				<img src="img/IMG_2192.JPG" alt=""width="200" height="200"/>
+			</div>
+			<div class="box_s right">
+				<img src="img/IMG_2188.JPG" alt=""width="200" height="200"/>
+			</div>
+			<div class="box_s before">
+				<img src="img/IMG_2185.JPG" alt=""width="200" height="200"/>
+			</div>
+			<div class="box_s after">
+				<img src="img/IMG_2138.JPG" alt=""width="200" height="200"/>
+			</div>
+			<div class="small">
+				<div class="box_s2 top2">
+					<img src="img/IMG_2139.JPG" alt=""width="100" height="100"/>
+				</div>
+				<div class="box_s2 bottom2">
+					<img src="img/IMG_2140.JPG" alt=""width="100" height="100"/>
+				</div>
+				<div class="box_s2 left2">
+					<img src="img/IMG_2184.JPG" alt=""width="100" height="100"/>
+				</div>
+				<div class="box_s2 right2">
+					<img src="img/IMG_2187.JPG" alt=""width="100" height="100"/>
+				</div>
+				<div class="box_s2 before2">
+					<img src="img/IMG_2190.JPG" alt=""width="100" height="100"/>
+				</div>
+				<div class="box_s2 after2">
+					<img src="img/IMG_2262.JPG" alt=""width="100" height="100"/>
+				</div>
+			</div>
+				<div class="sosmall">
+					<div class="box_s3 top3">
+						<img src="img/IMG_2265.JPG" alt=""width="50" height="50"/>
+					</div>
+					<div class="box_s3 bottom3">
+						<img src="img/IMG_2316.JPG" alt=""width="50" height="50"/>
+					</div>
+					<div class="box_s3 left3">
+						<img src="img/IMG_1789.JPG" alt=""width="50" height="50"/>
+					</div>
+					<div class="box_s3 right3">
+						<img src="img/IMG_1511.JPG" alt=""width="50" height="50"/>
+					</div>
+					<div class="box_s3 before3">
+						<img src="img/IMG_0194.JPG" alt=""width="50" height="50"/>
+					</div>
+					<div class="box_s3 after3">
+						<img src="img/IMG_0209.JPG" alt=""width="50" height="50"/>
+					</div>
+				
+			</div>
+		</div>
+</body>
+</html>
+<script type="text/javascript">
+	var oBox = document.getElementById("debi");
+	var oBtn = document.getElementById("btn");
+	function Snow(w,h){
+		this.width = w;
+		this.height = h;
+	}
+	Snow.prototype.rand = function(min,max){
+		return Math.floor(Math.random()*(max-min+1)) + min;
+	}
+	Snow.prototype.createImg = function(){
+		this.oImg = document.createElement("img");
+		this.oImg.className="snow";
+		this.oImg.src="img/snow.png";
+		this.oImg.style.width=this.width;
+		this.oImg.style.height=this.height;
+		this.oImg.style.left = this.rand(100,1200)+"px";
+		this.oImg.style.top=5+"px";
+		oBox.appendChild(this.oImg);
+		this.move();
+	}
+	Snow.prototype.move =function(){
+		var that = this;
+		setInterval(function(){
+//			var speed = 10;
+			that.oImg.style.left = that.oImg.offsetLeft-15+"px";
+			that.oImg.style.top = 35+that.oImg.offsetTop+"px";
+			if(that.oImg.offsetTop>900||that.oImg.offsetLeft<0){
+				//图片的高度 大于 大盒子的高度时移除所添加的图片
+				oBox.removeChild(that.oImg);
+			}
+			
+		},150)
+	}
+	window.onload=function(){
+	var  timer = setInterval(function(){
+			var snow = new Snow("20px","20px");
+			snow.createImg();
+		},30)
+	}
+</script>
